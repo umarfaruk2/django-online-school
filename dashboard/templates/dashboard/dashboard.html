@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block content %}
+<div class="w-[80%] mx-auto">
+  <h3 class="my-5 text-2xl font-bold text-center border-b-4 pb-3">My All Courses</h3>
+  <a href="{% url 'create_course' %}" class="text-lg font-bold bg-cyan-700 text-white p-2 rounded-md">Add new course <span class="text-2xl ml-1">+</span></a>
+
+  <div class="grid grid-flow-row grid-cols-3 gap-5 mt-5 pb-5">
+    {% for item in course %}
+    <div class="rounded shadow-lg">
+      <img
+        class="w-full h-[197px]"
+        src="{{item.images.url}}"
+        alt="Sunset in the mountains"
+      />
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">{{item.title}}</div>
+        <p class="text-gray-700"><span class="font-bold">Department </span>: {{item.department}}</p>
+        <p class="my-2 text-gray-700"><span class="font-bold">Course length </span>: {{item.course_length}} month</p>
+        <p class="text-gray-700 text-base">
+          <span class="font-bold">Description </span>: {{item.description}}
+        </p>
+
+        <div class="py-3 flex items-center justify-between">
+            <a href="{% url 'update_course' pk=item.id %}" class="bg-amber-500 text-white p-2 rounded-md">Update Course</a> <a href="{% url 'delete_course' item.id %}" class="bg-red-500 text-white p-2 rounded-md" >Delete Course</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}
