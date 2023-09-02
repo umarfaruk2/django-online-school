@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     
     'accounts',
     'courses',
-    'dashboard'
+    'dashboard',
+    'core'
 ]
 
 TAILWIND_APP_NAME = 'theme'
