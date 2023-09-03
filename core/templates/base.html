@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-{% load static tailwind_tags %}
+{% load static  %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %} Home {% endblock %}</title>
-    {% tailwind_css %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
        <nav class="bg-gray-800 p-4">
