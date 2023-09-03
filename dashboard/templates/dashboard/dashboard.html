@@ -1,4 +1,9 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %}
+{% block title %}
+
+  Dashboard
+{% endblock title %}
+{% block content %}
 <div class="w-[80%] mx-auto">
   <h3 class="my-5 text-2xl font-bold text-center border-b-4 pb-3">My All Courses</h3>
   <a href="{% url 'create_course' %}" class="text-lg font-bold bg-cyan-700 text-white p-2 rounded-md">Add new course <span class="text-2xl ml-1">+</span></a>

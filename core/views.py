@@ -19,5 +19,5 @@ def home(request):
     for item  in DEPARTMENT:
         department.append(item[0])
     
-    return render(request, 'home.html', {'course': course, 'department': department})
+    return render(request, 'index.html', {'course': course, 'department': department})
 
