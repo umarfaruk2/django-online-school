@@ -12,7 +12,7 @@ class RegisterView(FormView):
 
     def form_valid(self, form):
         form.save()
-        return redirect('home')
+        return redirect('login')
 
 
 def userLogin(request):
