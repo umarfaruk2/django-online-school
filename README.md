@@ -3,7 +3,7 @@
 ## Overview
 The Learning hub is an educational web application designed to support both teachers and students. It offers various features aimed at enhancing the learning experience. Overview of the key features of the project.
 
--live link - [Online-school](http://umarfaruk1.pythonanywhere.com/)
+**Website Live Link:** [Online-school](http://umarfaruk1.pythonanywhere.com/)
 
 ## Features
 
